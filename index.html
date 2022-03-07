@@ -7,13 +7,20 @@
     <title>Document</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
+
         model-viewer{
-            background-color: #fff;
-            --poster-color:rgb(151, 28, 28);
+            width: 80%;
+            height: 500px;
+            margin: 0 10%;
+            --poster-color:transparent;
+
         }
     </style>
 </head>
 <body>
-    <model-viewer alt="Neil" src="scene.gltf" ar ar-modes="webxr scene-viewer quick-look" environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" seamless-poster shadow-intensity="1" camera-controls auto-rotate ios-src="scene.usdz"></model-viewer>
+    <!-- <model-viewer alt="Neil" src="scene.gltf" skybox- ar ar-modes="webxr scene-viewer quick-look"     camera-controls auto-rotate ios-src="scene.usdz"></model-viewer>  -->
+        <model-viewer alt="Neil" src="scene.gltf" skybox- ar ar-modes="webxr scene-viewer quick-look"  poster="shared-assets/models/NeilArmstrong.webp" seamless-poster shadow-intensity="1" camera-controls auto-rotate ios-src="scene.usdz"></model-viewer>
+
+    
 </body>
 </html>
